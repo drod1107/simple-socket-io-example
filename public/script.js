@@ -14,10 +14,6 @@
  */
 
 // Initialize a Socket.IO connection to the server
-import dotenv from 'dotenv'
-
-dotenv.config()
-
 const frontURL = process.env.FE_URL
 const socket = io(`${frontURL}`)
 
