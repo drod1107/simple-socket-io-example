@@ -14,7 +14,12 @@
  */
 
 // Initialize a Socket.IO connection to the server
-const socket = io('http://localhost:3000')
+import dotenv from 'dotenv'
+
+dotenv.config()
+
+const frontURL = process.env.FE_URL
+const socket = io(`${frontURL}`)
 
 // Handle form submission
 document.querySelector('form').addEventListener('submit', e => {
