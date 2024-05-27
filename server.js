@@ -12,10 +12,13 @@
 
 // Set up Express JS
 // import express for use
+const dotenv = require('dotenv')
 const express = require('express')
 
 // create an instance of express
 const app = express()
+
+dotenv.config()
 
 const port = process.env.PORT
 
